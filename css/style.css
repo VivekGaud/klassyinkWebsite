@@ -1,0 +1,431 @@
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+
+.wrapper{
+	
+	
+
+}
+
+.wrapper > div {
+	/*padding: 0.5em;*/
+}
+
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: yellow;
+	flex-wrap: wrap;
+	font-family: sans-serif;
+	border-top: solid;
+	border-bottom: solid 2px;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+
+.headerlogo {
+	display: flex;
+	justify-content: space-around;
+	width: 20%;
+}
+.headerlogo img {
+	cursor: pointer;
+}
+.logo img{
+	cursor: pointer;
+}
+
+.headerlink {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	align-items: center;
+	text-decoration: none;
+	flex-wrap: wrap;
+
+}
+.headerlink a{
+	text-decoration: none;
+	color: black;
+}
+.headerlink li{
+	list-style: none;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	border-bottom: solid 1px;
+	padding: 10px;
+}
+
+.logo{
+	display: flex;
+	width: 15%;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+	
+}
+
+.nav-links{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	align-items: center;
+	flex-grow: hidden;
+
+}
+.nav-links a{
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-family: Arial Black;
+	color: black;
+	text-align: left;
+}
+
+.nav-links li{
+	list-style: none;
+	position: relative;
+	text-align: center;
+	
+}
+.nav-links a:hover{
+	border-top: solid ;
+	color: #66b3ff;
+}
+
+.submenuProduct li:hover{
+	background-color: yellow;
+}
+
+
+.nav-links li:hover .submenuProduct > li {
+	display: block;
+	top: 30px;
+}
+
+/*.nav-links li:hover .submenuProduct2 > li {
+	display: block;
+	top: 30px;
+}*/
+
+.seconHeader ul{
+	display: flex;
+}
+
+
+.submenuProduct li{
+	display: none;
+	background-color: white;
+	position: relative;
+	padding: 15px;
+}
+
+.submenuProduct{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 200%;
+}
+
+
+.submenuProduct2 li{
+	display: none;
+	background-color: yellow;
+	position: relative;
+	padding: 8px;
+}
+
+.submenuProduct2{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 120%;
+}
+
+.submenuProduct3  li{
+	display: none;
+	background-color: yellow;
+	position: relative;
+	padding: 15px;
+}
+.submenuProduct3{
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	width: 150%;
+	transform: translateX(-300%);
+}
+.nactive{
+	display: block;
+}
+
+
+
+.searchBar input[type=text] {
+	width: -100%; 
+	box-sizing: 
+	border-box; 
+	padding: 10px;
+  
+}
+
+/* Style the submit button */
+.searchBar input[type=button] {
+	padding: 12px; 
+	background-color: #3385ff; 
+	color: white; 
+	border-radius: 20px; 
+	border:none;
+
+}
+
+
+
+
+.three-line{
+	display: none;
+	cursor: pointer;
+}
+
+.three-line div{
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	margin: 5px;
+}
+
+
+
+.mobileviewAccount{
+	display: none;
+}
+
+@media screen and (max-width: 1100px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 30vh;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-start;
+		padding-left: 6%;
+		transform: translateX(100%);
+		transition: 0.5s ease-in;
+		border: none;
+	}
+
+	.nav-links a:hover{
+	border-top: none;
+	color: #66b3ff;
+
+	}
+	.nav-links li:hover .submenuProduct > li {
+	display: block;
+	width: 150%;
+	top: 0px;
+	}
+
+	.submenuProduct  a:hover {
+		color: #0d0d0d;
+	}
+	
+
+	.submenuProduct  li{
+		background-color: #808080;
+	}
+	.nav-links a{
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-family: serif;
+	color: #1a1a1a;
+	text-align: left;
+	}
+
+	.submenuProduct{
+		padding-left: 120%;
+		width: 300%;
+		
+	}
+
+
+	.three-line {
+		display: block;
+	}
+	.headerlogo {
+		width: 100%;
+	}
+	.headerlink{
+		width: 100%;
+		justify-content: space-around;
+		border-top: solid 1px ;
+
+	}
+	.headerlogo{
+		width: 15%;
+		padding: 10px;
+	}
+	
+
+
+
+	.mobileview a {
+		display: none;
+	}
+	.webview{
+		display: none;
+	}
+
+	.mobileviewAccount{
+		display: block;
+	}
+
+
+}
+.nav-active {
+	transform: translateX(0%);
+}
+
+
+
+/* Css for second header 
+.seconHeader {
+	display: grid;
+	grid-template-columns: repeat(10,auto);
+	grid-gap: 1em;
+	font-family: sans-serif;
+	border-bottom: 1px solid;
+	
+}
+ 
+.seconHeader > div {
+	
+	align-self: center;
+}
+.seconHeader > div:nth-child(odd) {
+	
+
+}
+*/
+/* Css for slide bar */
+
+.slidebar {
+	
+/*	border:solid;*/
+
+}
+
+.slidebar img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 50px;
+   
+    width: auto\2; /* ie8 */
+}
+
+.fashion-builder-row {
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33% ;
+	grid-gap: 0.5em;
+
+}
+
+.fashion-builder-row img {
+    max-width: 100%;
+    height: auto;
+    width: auto\5; /* ie8 */
+    cursor: pointer;
+}
+
+.fashion-builder-row2 {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 0.5em;
+	padding: 1em;
+
+}
+
+.fashion-builder-row2 img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    width: auto\5; /* ie8 */
+}
+
+.fashion-builder-row3 {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 1em;
+}
+
+.fashion-builder-row3 img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    width: auto\5; /* ie8 */
+    padding: 15px;
+}
+
+.learnMore {
+	display: grid;
+	grid-template-columns:33.33% 33.33% 33.33% ;
+	grid-auto-rows: minmax(100px,auto);
+	grid-auto-columns: auto;
+	align-items: center;
+	background-color: #ff1a1a;
+	cursor: pointer;
+
+}
+
+.learnMore h1,h2,h3,h4{
+	text-align: center;
+	word-wrap: break-word;
+	color: white;
+	font-family: Sans-serif;
+}
+
+
+
+.h1line h2{
+	display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #262626;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Verdana;
+}
+
+.h1line  h2:before,
+.h1line h2:after {
+    content: '';
+    border-top: 1px solid  #cccccc;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+.h1line  h2:after {
+    margin: 0 0 0 20px;
+}

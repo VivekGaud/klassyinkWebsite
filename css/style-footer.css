@@ -1,0 +1,122 @@
+.fusion-column {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: minmax(500px,auto);
+	grid-gap: 1em;
+}
+
+.fusionImg {
+
+	width: auto/10;
+	height: auto/10;
+	overflow: hidden;
+}
+
+.fusionImg img {
+	height: auto;
+	max-width: 95%;
+	transition: 0.5s;
+	width: auto\10;
+}
+
+.fusionImg:hover img {
+	transform: scale(1.08);
+}
+
+.fusionImgtxt h6,h3{
+	color: black;
+	text-align: left;
+	font-family: Tahoma;
+	font-weight: 500;
+	color: #4d4d4d;
+	
+}
+.fusionImgtxt h2{
+	color: black;
+	text-align: left;
+	font-family: Tahoma;
+	font-weight: 500;
+	color: black;
+	font-size: 3vh;
+}
+
+.fanpage {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+	background-color: yellow;
+}
+.fanpage h2,h1 {
+	color: black;
+	text-align: center;
+	font-family: Tahoma;
+	font-weight: 500;
+}
+
+.fanSocialLogo {
+	display: flex;
+	justify-content: space-around;
+}
+.fanSocialLogo img {
+	cursor: pointer;
+}
+
+.radius {
+	font-size:25px;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: minmax(600px,auto);
+	background-color: black;
+}
+.footer  div > h4{
+	text-align: left;
+	
+}
+
+.footer a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 80%;
+	border-bottom: solid 0.1px white;
+}
+
+.footer a:hover{
+	background-color: #262626;;
+}
+.footer li{
+
+	list-style: none;
+}
+
+.SocialLogo {
+	display: flex;
+}
+
+.SocialLogo img{
+	background-color: white;
+}
+
+.footer2nd {
+	background-color:  #262626;
+	color: white;
+	text-align: center;
+	font-family: Lucida Grande;
+}
+.footorlogo {
+	display: flex;
+	width: 60%;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.footorlogo img{
+	cursor: pointer;
+	padding: 2px;
+}
